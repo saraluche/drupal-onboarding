@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.location.field_contact_email
     - field.field.node.location.field_description
     - field.field.node.location.field_image
+    - field.field.node.location.field_location
     - field.field.node.location.field_phone_number
     - field.field.node.location.field_website
     - node.type.location
@@ -60,6 +61,14 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 103
+    region: content
+  field_location:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
     region: content
   field_phone_number:
     type: number_integer

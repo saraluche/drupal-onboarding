@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.location.field_contact_email
     - field.field.node.location.field_description
     - field.field.node.location.field_image
+    - field.field.node.location.field_location
     - field.field.node.location.field_phone_number
     - field.field.node.location.field_website
     - image.style.thumbnail
@@ -68,6 +69,16 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_location:
+    type: entity_reference_autocomplete
+    weight: 128
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_phone_number:
     type: number

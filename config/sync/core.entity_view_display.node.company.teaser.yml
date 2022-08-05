@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.company.field_contact_email
     - field.field.node.company.field_descrition
     - field.field.node.company.field_logo
+    - field.field.node.company.field_organizer
     - field.field.node.company.field_phone_number
     - field.field.node.company.field_website
     - node.type.company
@@ -28,5 +29,6 @@ hidden:
   field_contact_email: true
   field_descrition: true
   field_logo: true
+  field_organizer: true
   field_phone_number: true
   field_website: true

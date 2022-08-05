@@ -1,65 +1,61 @@
-uuid: eb9f3bc6-eca9-48aa-8d07-3598d1933224
+uuid: 2fce339c-c7d6-48e1-8363-2bf8648acced
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.company.field_address
-    - field.field.node.company.field_contact_email
-    - field.field.node.company.field_descrition
-    - field.field.node.company.field_logo
-    - field.field.node.company.field_organizer
-    - field.field.node.company.field_phone_number
-    - field.field.node.company.field_website
+    - field.field.node.event.body
+    - field.field.node.event.field_description
+    - field.field.node.event.field_image
+    - field.field.node.event.field_location
+    - field.field.node.event.field_organizer
+    - field.field.node.event.field_start_end_date
+    - field.field.node.event.field_website
     - image.style.thumbnail
-    - node.type.company
+    - node.type.event
   module:
-    - address
+    - datetime
     - image
     - link
     - path
     - text
-id: node.company.default
+id: node.event.default
 targetEntityType: node
-bundle: company
+bundle: event
 mode: default
 content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_address:
-    type: address_default
-    weight: 124
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_contact_email:
-    type: email_default
-    weight: 126
-    region: content
-    settings:
-      placeholder: ''
-      size: 60
-    third_party_settings: {  }
-  field_descrition:
+  field_description:
     type: text_textarea
-    weight: 121
+    weight: 122
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_logo:
+  field_image:
     type: image_image
-    weight: 122
+    weight: 124
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  field_organizer:
+  field_location:
     type: entity_reference_autocomplete
     weight: 127
     region: content
@@ -69,16 +65,25 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_phone_number:
-    type: number
-    weight: 125
+  field_organizer:
+    type: entity_reference_autocomplete
+    weight: 126
     region: content
     settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_start_end_date:
+    type: datetime_default
+    weight: 123
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_website:
     type: link_default
-    weight: 123
+    weight: 125
     region: content
     settings:
       placeholder_url: ''
