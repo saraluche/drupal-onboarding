@@ -1,0 +1,8 @@
+uuid: 866b3f67-3781-4dd4-9a92-af0e1968d4b3
+langcode: en
+status: true
+dependencies: {  }
+name: Equipment
+vid: equipment
+description: ''
+weight: 0
