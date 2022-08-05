@@ -1,0 +1,21 @@
+uuid: 6e798c39-2bfd-4d5e-8dfc-4ad768f415a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descrition
+    - node.type.company
+  module:
+    - text
+id: node.company.field_descrition
+field_name: field_descrition
+entity_type: node
+bundle: company
+label: Descrition
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

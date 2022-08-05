@@ -1,0 +1,25 @@
+uuid: 9f62b1fc-e3ca-4988-a6d1-71495b9b7255
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.company
+  module:
+    - address
+id: node.company.field_address
+field_name: field_address
+entity_type: node
+bundle: company
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address
