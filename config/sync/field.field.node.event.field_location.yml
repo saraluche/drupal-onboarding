@@ -1,4 +1,4 @@
-uuid: 7b5a3e3c-3cda-4065-9a0c-1870b240ff2e
+uuid: 28bf051f-8daf-412e-8a50-362a024f5e5a
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ bundle: event
 label: Location
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.location.field_address
     - field.field.node.location.field_contact_email
     - field.field.node.location.field_description
+    - field.field.node.location.field_equipment
     - field.field.node.location.field_image
     - field.field.node.location.field_location
     - field.field.node.location.field_phone_number
@@ -50,6 +51,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_equipment:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 109
     region: content
   field_image:
     type: image

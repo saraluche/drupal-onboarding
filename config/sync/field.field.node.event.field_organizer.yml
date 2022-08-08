@@ -1,4 +1,4 @@
-uuid: 905c50b8-d0ca-4b15-9f9f-8d90380f72e9
+uuid: 730da695-40a3-438d-8516-3038b24a2999
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ bundle: event
 label: Organizer
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

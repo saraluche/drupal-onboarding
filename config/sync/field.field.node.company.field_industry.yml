@@ -1,29 +1,29 @@
-uuid: 327e9f7b-a78d-45a1-b8d6-a77c4b201aaa
+uuid: ce623fdf-681e-40a3-85f2-bccc4a16348c
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_organizer
+    - field.storage.node.field_industry
     - node.type.company
-    - node.type.event
-id: node.company.field_organizer
-field_name: field_organizer
+    - taxonomy.vocabulary.industry
+id: node.company.field_industry
+field_name: field_industry
 entity_type: node
 bundle: company
-label: Organizer
+label: Industry
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
+  handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      event: event
+      industry: industry
     sort:
-      field: _none
-      direction: ASC
+      field: name
+      direction: asc
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

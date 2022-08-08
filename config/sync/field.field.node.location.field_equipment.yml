@@ -1,0 +1,29 @@
+uuid: 3a18f7b6-7702-4abb-bdce-3dda231bc520
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_equipment
+    - node.type.location
+    - taxonomy.vocabulary.equipment
+id: node.location.field_equipment
+field_name: field_equipment
+entity_type: node
+bundle: location
+label: Equipment
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      equipment: equipment
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

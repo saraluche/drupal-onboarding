@@ -6,8 +6,8 @@ dependencies:
     - field.field.node.company.field_address
     - field.field.node.company.field_contact_email
     - field.field.node.company.field_descrition
+    - field.field.node.company.field_industry
     - field.field.node.company.field_logo
-    - field.field.node.company.field_organizer
     - field.field.node.company.field_phone_number
     - field.field.node.company.field_website
     - image.style.thumbnail
@@ -51,6 +51,16 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_industry:
+    type: entity_reference_autocomplete
+    weight: 128
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_logo:
     type: image_image
     weight: 122
@@ -58,16 +68,6 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
-    third_party_settings: {  }
-  field_organizer:
-    type: entity_reference_autocomplete
-    weight: 127
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   field_phone_number:
     type: number

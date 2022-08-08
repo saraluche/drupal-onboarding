@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_description
+    - field.field.node.event.field_event_type
     - field.field.node.event.field_image
     - field.field.node.event.field_location
     - field.field.node.event.field_organizer
@@ -35,6 +36,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_event_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
     region: content
   field_image:
     type: image

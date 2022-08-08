@@ -6,8 +6,8 @@ dependencies:
     - field.field.node.company.field_address
     - field.field.node.company.field_contact_email
     - field.field.node.company.field_descrition
+    - field.field.node.company.field_industry
     - field.field.node.company.field_logo
-    - field.field.node.company.field_organizer
     - field.field.node.company.field_phone_number
     - field.field.node.company.field_website
     - node.type.company
@@ -43,6 +43,14 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  field_industry:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
   field_logo:
     type: image
     label: above
@@ -53,14 +61,6 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 102
-    region: content
-  field_organizer:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 107
     region: content
   field_phone_number:
     type: number_integer
