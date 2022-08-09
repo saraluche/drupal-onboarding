@@ -3,7 +3,7 @@
  */
 
 (function ($, Drupal) {
-  'use strict'
+  'use strict';
 
   /**
    * General behaviours.
