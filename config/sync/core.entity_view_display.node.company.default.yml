@@ -13,10 +13,54 @@ dependencies:
     - node.type.company
   module:
     - address
-    - image
+    - field_group
     - link
-    - text
     - user
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_tab1
+        - group_tab2
+      label: Tabs
+      parent_name: ''
+      region: hidden
+      weight: 20
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: vertical
+        width_breakpoint: 640
+    group_tab1:
+      children:
+        - field_descrition
+      label: Tab1
+      parent_name: group_tabs
+      region: hidden
+      weight: 20
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: open
+        description: ''
+    group_tab2:
+      children:
+        - field_logo
+      label: Tab2
+      parent_name: group_tabs
+      region: hidden
+      weight: 21
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
 id: node.company.default
 targetEntityType: node
 bundle: company
@@ -27,21 +71,14 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 104
+    weight: 5
     region: content
   field_contact_email:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 106
-    region: content
-  field_descrition:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 101
+    weight: 4
     region: content
   field_industry:
     type: entity_reference_label
@@ -49,18 +86,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 108
-    region: content
-  field_logo:
-    type: image
-    label: above
-    settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: 102
+    weight: 6
     region: content
   field_phone_number:
     type: number_integer
@@ -69,7 +95,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 105
+    weight: 7
     region: content
   field_website:
     type: link
@@ -81,11 +107,13 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 103
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_descrition: true
+  field_logo: true

@@ -32,6 +32,7 @@
         "drupal/core-recommended": "^9.0.0",
         "drupal/devel": "^4.1",
         "drupal/elasticsearch_connector": "^7.0@alpha",
+        "drupal/field_group": "^3.2",
         "drupal/migrate_file": "^2.0",
         "drupal/migrate_plus": "^5.1",
         "drupal/migrate_source_csv": "^3.4",
