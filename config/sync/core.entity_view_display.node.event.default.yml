@@ -14,10 +14,80 @@ dependencies:
     - node.type.event
   module:
     - datetime
+    - field_group
     - image
     - link
     - text
     - user
+third_party_settings:
+  field_group:
+    group_html:
+      children:
+        - field_event_type
+        - field_location
+      label: Html
+      parent_name: ''
+      region: content
+      weight: 6
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_test:
+      children:
+        - field_description
+      label: test
+      parent_name: ''
+      region: content
+      weight: 5
+      format_type: html_element
+      format_settings:
+        classes: testing
+        show_empty_fields: false
+        id: testing
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_accordion:
+      children:
+        - group_accordion_item
+        - field_organizer
+      label: Accordion
+      parent_name: ''
+      region: content
+      weight: 4
+      format_type: accordion
+      format_settings:
+        classes: accordion_class
+        show_empty_fields: false
+        id: accordion_id
+        effect: none
+    group_accordion_item:
+      children:
+        - field_website
+      label: 'Accordion item'
+      parent_name: group_accordion
+      region: content
+      weight: 20
+      format_type: accordion_item
+      format_settings:
+        classes: accordionitem_class
+        show_empty_fields: true
+        id: accordionitem_id
+        formatter: closed
+        description: ''
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -28,14 +98,14 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 1
     region: content
   field_description:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 102
+    weight: 2
     region: content
   field_event_type:
     type: entity_reference_label
@@ -43,7 +113,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 108
+    weight: 9
     region: content
   field_image:
     type: image
@@ -54,7 +124,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 104
+    weight: 3
     region: content
   field_location:
     type: entity_reference_label
@@ -62,7 +132,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 107
+    weight: 10
     region: content
   field_organizer:
     type: entity_reference_label
@@ -70,7 +140,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 106
+    weight: 22
     region: content
   field_start_end_date:
     type: datetime_default
@@ -79,7 +149,7 @@ content:
       timezone_override: ''
       format_type: medium
     third_party_settings: {  }
-    weight: 103
+    weight: 2
     region: content
   field_website:
     type: link
@@ -91,11 +161,11 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 105
+    weight: 21
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden: {  }

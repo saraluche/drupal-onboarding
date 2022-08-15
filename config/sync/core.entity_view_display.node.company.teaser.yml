@@ -13,21 +13,29 @@ dependencies:
     - field.field.node.company.field_website
     - node.type.company
   module:
+    - text
     - user
 id: node.company.teaser
 targetEntityType: node
 bundle: company
 mode: teaser
 content:
+  field_descrition:
+    type: text_trimmed
+    label: above
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    weight: 1
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   field_address: true
   field_contact_email: true
-  field_descrition: true
   field_industry: true
   field_logo: true
   field_phone_number: true

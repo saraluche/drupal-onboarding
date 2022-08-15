@@ -1,8 +1,9 @@
-uuid: 6c11af54-b23a-4da6-9ae9-fc5413d3041e
+uuid: 5939b437-5b12-44e0-82b0-99748acf4133
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.small_teaser
     - field.field.node.company.field_address
     - field.field.node.company.field_contact_email
     - field.field.node.company.field_descrition
@@ -37,7 +38,7 @@ third_party_settings:
         width_breakpoint: 640
     group_tab1:
       children:
-        - field_address
+        - field_descrition
       label: Tab1
       parent_name: group_tabs
       region: content
@@ -51,7 +52,7 @@ third_party_settings:
         description: ''
     group_tab2:
       children:
-        - field_industry
+        - field_logo
       label: Tab2
       parent_name: group_tabs
       region: content
@@ -63,30 +64,10 @@ third_party_settings:
         id: ''
         formatter: closed
         description: ''
-    group_html_company:
-      children:
-        - field_logo
-        - field_descrition
-      label: Html_company
-      parent_name: ''
-      region: content
-      weight: 0
-      format_type: html_element
-      format_settings:
-        classes: company-header_class
-        show_empty_fields: false
-        id: company-header
-        element: div
-        show_label: false
-        label_element: h3
-        label_element_classes: ''
-        attributes: ''
-        effect: none
-        speed: fast
-id: node.company.default
+id: node.company.small_teaser
 targetEntityType: node
 bundle: company
-mode: default
+mode: small_teaser
 content:
   field_address:
     type: address_default
@@ -107,7 +88,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_industry:
     type: entity_reference_label
@@ -135,7 +116,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: content
   field_website:
     type: link
@@ -147,11 +128,11 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 3
+    weight: 1
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
 hidden: {  }
