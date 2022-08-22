@@ -1,15 +1,14 @@
-uuid: 195e6766-4180-4aa1-97ea-32c01187bb97
+uuid: a3ead0a8-e374-4c4f-83e5-679adf8dc203
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - node.type.company
   module:
     - node
     - user
-id: company_view
-label: 'Company view'
+id: company
+label: Company
 module: views
 description: ''
 tag: ''
@@ -22,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Company view'
+      title: Company
       fields:
         title:
           id: title
@@ -75,7 +74,7 @@ display:
         type: mini
         options:
           offset: 0
-          items_per_page: 5
+          items_per_page: 10
           total_pages: null
           id: 0
           tags:
@@ -124,15 +123,6 @@ display:
             field_identifier: ''
           exposed: false
           granularity: second
-        nid:
-          id: nid
-          table: node_field_data
-          field: nid
-          entity_type: node
-          entity_field: nid
-          plugin_id: standard
-          expose:
-            field_identifier: nid
       arguments: {  }
       filters:
         status:
@@ -146,18 +136,6 @@ display:
           group: 1
           expose:
             operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          value:
-            company: company
-          expose:
             operator_limit_selection: false
             operator_list: {  }
       style:
@@ -187,63 +165,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  block_1:
-    id: block_1
-    display_title: 'Featured companies'
-    display_plugin: block
-    position: 2
-    display_options:
-      pager:
-        type: some
-        options:
-          offset: 0
-          items_per_page: 5
-      sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          order: DESC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
-          granularity: second
-        nid:
-          id: nid
-          table: node_field_data
-          field: nid
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: nid
-          plugin_id: standard
-          order: DESC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
-      defaults:
-        pager: false
-        sorts: false
-      display_description: ''
-      display_extenders: {  }
-      block_description: 'Featured companies'
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
   page_1:
     id: page_1
     display_title: Page
@@ -251,16 +172,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: companies
-      menu:
-        type: tab
-        title: 'Company view'
-        description: ''
-        weight: 0
-        expanded: false
-        menu_name: admin
-        parent: ''
-        context: '0'
+      path: company
     cache_metadata:
       max-age: -1
       contexts:

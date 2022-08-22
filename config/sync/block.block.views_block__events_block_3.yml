@@ -1,24 +1,25 @@
-uuid: 8e89d080-cbe9-40c6-b824-45cde97b3c36
+uuid: cf830f42-2062-4300-b02f-816f2c40275a
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.company_view
+    - views.view.events
   module:
     - views
   theme:
     - bartik
-id: views_block__company_view_block_1
+id: views_block__events_block_3
 theme: bartik
-region: content
+region: sidebar_first
 weight: 0
 provider: null
-plugin: 'views_block:company_view-block_1'
+plugin: 'views_block:events-block_3'
 settings:
-  id: 'views_block:company_view-block_1'
+  id: 'views_block:events-block_3'
   label: ''
   label_display: visible
   provider: views
+  context_mapping: {  }
   views_label: ''
   items_per_page: none
 visibility: {  }
