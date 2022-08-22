@@ -1,0 +1,21 @@
+uuid: 2fe82790-0ee7-42b0-aaaa-ff9f22e6bc61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.faq
+  module:
+    - text
+id: paragraph.faq.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: faq
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

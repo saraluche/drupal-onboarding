@@ -1,0 +1,10 @@
+uuid: 0d7cc3a4-4131-4b84-aa03-e8687d4005d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.featured_companies
+label: 'Featured companies'
+targetEntityType: node
+cache: true

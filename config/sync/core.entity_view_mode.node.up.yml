@@ -1,0 +1,10 @@
+uuid: 22bb50cf-cb9a-469e-96a0-7c9e9b556d21
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.up
+label: 'Upcoming events'
+targetEntityType: node
+cache: true

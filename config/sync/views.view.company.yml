@@ -1,14 +1,14 @@
-uuid: 44aa7f36-0bdc-4ad1-a023-d1778a1cf699
+uuid: a3ead0a8-e374-4c4f-83e5-679adf8dc203
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.location
+    - core.entity_view_mode.node.teaser
   module:
     - node
     - user
-id: location
-label: Location
+id: company
+label: Company
 module: views
 description: ''
 tag: ''
@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Location
+      title: Company
       fields:
         title:
           id: title
@@ -33,7 +33,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-          label: Title
+          label: ''
           exclude: false
           alter:
             alter_text: false
@@ -74,7 +74,7 @@ display:
         type: mini
         options:
           offset: 0
-          items_per_page: 5
+          items_per_page: 10
           total_pages: null
           id: 0
           tags:
@@ -138,26 +138,12 @@ display:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          value:
-            location: location
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
       style:
         type: default
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          view_mode: teaser
       query:
         type: views_query
         options:
@@ -186,16 +172,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: locations
-      menu:
-        type: tab
-        title: Location
-        description: ''
-        weight: 0
-        expanded: false
-        menu_name: admin
-        parent: ''
-        context: '0'
+      path: company
     cache_metadata:
       max-age: -1
       contexts:
