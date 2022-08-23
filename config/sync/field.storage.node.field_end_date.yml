@@ -1,0 +1,20 @@
+uuid: b18c9386-1d75-4d4f-a216-c734ffde5aa6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_end_date
+field_name: field_end_date
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

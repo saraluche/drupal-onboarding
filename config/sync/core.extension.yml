@@ -60,4 +60,6 @@ module:
 theme:
   claro: 0
   bartik: 0
+  stable: 0
+  classy: 0
 profile: standard

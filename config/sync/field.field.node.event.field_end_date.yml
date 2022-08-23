@@ -1,0 +1,23 @@
+uuid: 623dc5be-6839-43ee-820e-aacce376c618
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_end_date
+    - node.type.event
+id: node.event.field_end_date
+field_name: field_end_date
+entity_type: node
+bundle: event
+label: 'End date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

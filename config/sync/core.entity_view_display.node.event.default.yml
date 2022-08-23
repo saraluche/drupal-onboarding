@@ -5,18 +5,19 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_description
+    - field.field.node.event.field_end_date
     - field.field.node.event.field_event_type
     - field.field.node.event.field_image
     - field.field.node.event.field_location
     - field.field.node.event.field_organizer
-    - field.field.node.event.field_start_end_date
+    - field.field.node.event.field_start_date
     - field.field.node.event.field_website
     - node.type.event
   module:
-    - datetime
     - field_group
     - image
     - link
+    - options
     - text
     - user
 third_party_settings:
@@ -148,6 +149,15 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
+  field_end_date:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 23
+    region: content
   field_event_type:
     type: entity_reference_label
     label: above
@@ -184,14 +194,12 @@ content:
     third_party_settings: {  }
     weight: 5
     region: content
-  field_start_end_date:
-    type: datetime_default
+  field_start_date:
+    type: list_default
     label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
+    settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 22
     region: content
   field_website:
     type: link

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - system.menu.main
   module:
     - node
     - user
@@ -173,6 +174,15 @@ display:
     display_options:
       display_extenders: {  }
       path: company
+      menu:
+        type: normal
+        title: Companies
+        description: ''
+        weight: 0
+        expanded: false
+        menu_name: main
+        parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
