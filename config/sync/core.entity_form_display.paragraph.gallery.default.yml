@@ -4,9 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.gallery.field_image1
-    - field.field.paragraph.gallery.field_image2
-    - field.field.paragraph.gallery.field_image3
-    - field.field.paragraph.gallery.field_image4
     - image.style.thumbnail
     - paragraphs.paragraphs_type.gallery
   module:
@@ -19,30 +16,6 @@ content:
   field_image1:
     type: image_image
     weight: 0
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-  field_image2:
-    type: image_image
-    weight: 1
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-  field_image3:
-    type: image_image
-    weight: 2
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-  field_image4:
-    type: image_image
-    weight: 3
     region: content
     settings:
       progress_indicator: throbber
