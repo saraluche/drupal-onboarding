@@ -1,0 +1,9 @@
+name: My theme
+type: theme
+description: Custom Theme
+core: 8.x
+base theme: classy
+core_version_requirement: ^8 || ^9
+
+libraries:
+  - my_theme/global.css
