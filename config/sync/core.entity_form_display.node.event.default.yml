@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_description
+    - field.field.node.event.field_e
     - field.field.node.event.field_end_date
     - field.field.node.event.field_event_type
     - field.field.node.event.field_image
@@ -15,6 +16,7 @@ dependencies:
     - image.style.thumbnail
     - node.type.event
   module:
+    - datetime
     - image
     - link
     - path
@@ -48,12 +50,17 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_end_date:
-    type: number
-    weight: 130
+  field_e:
+    type: datetime_default
+    weight: 132
     region: content
-    settings:
-      placeholder: ''
+    settings: {  }
+    third_party_settings: {  }
+  field_end_date:
+    type: datetime_default
+    weight: 133
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_event_type:
     type: entity_reference_autocomplete
@@ -94,8 +101,8 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_start_date:
-    type: options_select
-    weight: 129
+    type: datetime_default
+    weight: 131
     region: content
     settings: {  }
     third_party_settings: {  }
