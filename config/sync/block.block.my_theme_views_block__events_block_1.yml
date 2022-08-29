@@ -1,4 +1,4 @@
-uuid: 27c54f17-fc2c-440d-9c6a-dbacbbb7a7c8
+uuid: 7c5dd60c-9cfe-40f7-9d41-1eb812ecd33a
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,9 @@ dependencies:
     - node
     - views
   theme:
-    - bartik
-id: views_block__events_block_1
-theme: bartik
+    - my_theme
+id: my_theme_views_block__events_block_1
+theme: my_theme
 region: sidebar_second
 weight: -7
 provider: null

@@ -24,11 +24,11 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
   field_text:
-    type: text_textfield
+    type: text_textarea
     weight: 1
     region: content
     settings:
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
 hidden:

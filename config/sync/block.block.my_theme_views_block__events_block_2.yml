@@ -1,4 +1,4 @@
-uuid: 27c54f17-fc2c-440d-9c6a-dbacbbb7a7c8
+uuid: 536f6513-d539-4060-9b6a-13964348acf9
 langcode: en
 status: true
 dependencies:
@@ -8,17 +8,17 @@ dependencies:
     - node
     - views
   theme:
-    - bartik
-id: views_block__events_block_1
-theme: bartik
+    - my_theme
+id: my_theme_views_block__events_block_2
+theme: my_theme
 region: sidebar_second
-weight: -7
+weight: -8
 provider: null
-plugin: 'views_block:events-block_1'
+plugin: 'views_block:events-block_2'
 settings:
-  id: 'views_block:events-block_1'
+  id: 'views_block:events-block_2'
   label: ''
-  label_display: visible
+  label_display: '0'
   provider: views
   context_mapping: {  }
   views_label: ''
@@ -30,4 +30,4 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
-      landing_page: landing_page
+      company: company

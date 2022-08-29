@@ -1,15 +1,15 @@
-uuid: 3bb536c8-3c97-4195-a639-99448ac1d31a
+uuid: 926ea599-76fd-4160-a7b4-2619dd19d398
 langcode: en
 status: true
 dependencies:
   module:
     - help
   theme:
-    - bartik
+    - my_theme
 _core:
   default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
-id: bartik_help
-theme: bartik
+id: my_theme_help
+theme: my_theme
 region: content
 weight: -7
 provider: null

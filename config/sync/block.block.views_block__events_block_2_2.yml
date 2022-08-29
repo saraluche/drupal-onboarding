@@ -1,4 +1,4 @@
-uuid: cf830f42-2062-4300-b02f-816f2c40275a
+uuid: 14caae87-fbb3-48b3-9ecb-d55094aece4d
 langcode: en
 status: true
 dependencies:
@@ -8,14 +8,14 @@ dependencies:
     - views
   theme:
     - bartik
-id: views_block__events_block_3
+id: views_block__events_block_2_2
 theme: bartik
 region: sidebar_first
-weight: -7
+weight: -5
 provider: null
-plugin: 'views_block:events-block_3'
+plugin: 'views_block:events-block_2'
 settings:
-  id: 'views_block:events-block_3'
+  id: 'views_block:events-block_2'
   label: ''
   label_display: visible
   provider: views
