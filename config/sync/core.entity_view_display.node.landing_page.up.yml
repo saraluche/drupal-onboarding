@@ -1,0 +1,29 @@
+uuid: a269ff6c-5103-4d76-9674-a384fadbaa97
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.up
+    - field.field.node.landing_page.body
+    - field.field.node.landing_page.field_content
+    - field.field.node.landing_page.field_paragraph
+    - node.type.landing_page
+  module:
+    - user
+id: node.landing_page.up
+targetEntityType: node
+bundle: landing_page
+mode: up
+content:
+  field_content:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_paragraph: true
+  links: true
