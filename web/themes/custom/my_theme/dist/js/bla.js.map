@@ -1,0 +1,1 @@
+{"version":3,"file":"bla.js","names":["console","log","a"],"sources":["bla.js"],"sourcesContent":["\nconsole.log('neshto')\nconst a = 0;\nconsole.log(a);"],"mappings":";;AACAA,OAAO,CAACC,GAAR,CAAY,QAAZ;AACA,IAAMC,CAAC,GAAG,CAAV;AACAF,OAAO,CAACC,GAAR,CAAYC,CAAZ"}

@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_description
-    - field.field.node.event.field_e
     - field.field.node.event.field_end_date
     - field.field.node.event.field_event_type
     - field.field.node.event.field_image
@@ -148,15 +147,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 3
-    region: content
-  field_e:
-    type: datetime_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 23
     region: content
   field_end_date:
     type: datetime_default

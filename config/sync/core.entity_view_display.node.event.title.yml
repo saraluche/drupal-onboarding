@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.title
     - field.field.node.event.body
     - field.field.node.event.field_description
-    - field.field.node.event.field_e
     - field.field.node.event.field_end_date
     - field.field.node.event.field_event_type
     - field.field.node.event.field_image
@@ -143,7 +142,6 @@ content:
 hidden:
   body: true
   field_description: true
-  field_e: true
   field_end_date: true
   field_event_type: true
   field_image: true

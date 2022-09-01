@@ -4,7 +4,10 @@
   "description": "[![Build Status](https://app.travis-ci.com/Gizra/drupal-starter.svg?branch=main)](https://app.travis-ci.com/Gizra/drupal-starter)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prodtask": "gulp prodtask",
+    "devtask": "gulp devtask",
+    "watchtask": "gulp watchtask"
   },
   "repository": {
     "type": "git",
@@ -17,10 +20,14 @@
   },
   "homepage": "https://github.com/saraluche/drupal-onboarding#readme",
   "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
     "autoprefixer": "^10.4.8",
     "cssnano": "^5.1.13",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.3",

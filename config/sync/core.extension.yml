@@ -34,7 +34,6 @@ module:
   jquery_ui: 0
   jquery_ui_accordion: 0
   link: 0
-  
   menu_link_content: 0
   menu_ui: 0
   mysql: 0
