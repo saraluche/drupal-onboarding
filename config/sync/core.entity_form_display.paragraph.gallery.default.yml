@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.gallery.field_image1
+    - field.field.paragraph.gallery.field_image
     - image.style.thumbnail
     - paragraphs.paragraphs_type.gallery
   module:
@@ -13,7 +13,7 @@ targetEntityType: paragraph
 bundle: gallery
 mode: default
 content:
-  field_image1:
+  field_image:
     type: image_image
     weight: 0
     region: content

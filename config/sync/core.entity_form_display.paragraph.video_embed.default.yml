@@ -3,22 +3,21 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.video_embed.field_v
+    - field.field.paragraph.video_embed.field_video
     - paragraphs.paragraphs_type.video_embed
+  module:
+    - media_library
 id: paragraph.video_embed.default
 targetEntityType: paragraph
 bundle: video_embed
 mode: default
 content:
-  field_v:
-    type: entity_reference_autocomplete
+  field_video:
+    type: media_library_widget
     weight: 0
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
 hidden:
   created: true

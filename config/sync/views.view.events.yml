@@ -197,6 +197,9 @@ display:
     display_plugin: block
     position: 2
     display_options:
+      title: 'Upcoming Events'
+      defaults:
+        title: false
       display_description: ''
       display_extenders: {  }
       block_description: 'Upcoming events'

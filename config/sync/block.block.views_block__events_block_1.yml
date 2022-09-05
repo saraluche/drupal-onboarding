@@ -6,13 +6,14 @@ dependencies:
     - views.view.events
   module:
     - node
+    - system
     - views
   theme:
     - bartik
 id: views_block__events_block_1
 theme: bartik
-region: sidebar_second
-weight: -7
+region: sidebar_first
+weight: -5
 provider: null
 plugin: 'views_block:events-block_1'
 settings:
@@ -30,4 +31,9 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
+      event: event
       landing_page: landing_page
+  request_path:
+    id: request_path
+    negate: false
+    pages: /landing_page

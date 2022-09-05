@@ -30,7 +30,7 @@ third_party_settings:
       label: 'Location accordion'
       parent_name: ''
       region: content
-      weight: 8
+      weight: 9
       format_type: accordion
       format_settings:
         classes: accordion_class
@@ -62,7 +62,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_address:
     type: geocoder_address
@@ -84,7 +84,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    weight: 7
     region: content
   field_description:
     type: text_default
@@ -99,7 +99,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 7
+    weight: 8
     region: content
   field_image:
     type: image
@@ -110,7 +110,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_location:
     type: entity_reference_label
@@ -127,7 +127,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: content
   field_test_field:
     type: geofield_default
@@ -136,7 +136,7 @@ content:
       output_format: wkt
       output_escape: true
     third_party_settings: {  }
-    weight: 23
+    weight: 1
     region: content
   field_website:
     type: link
@@ -148,11 +148,11 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
 hidden: {  }

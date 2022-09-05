@@ -15,15 +15,12 @@ targetEntityType: node
 bundle: landing_page
 mode: up
 content:
-  field_content:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
+  links:
+    settings: {  }
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   body: true
+  field_content: true
   field_paragraph: true
-  links: true

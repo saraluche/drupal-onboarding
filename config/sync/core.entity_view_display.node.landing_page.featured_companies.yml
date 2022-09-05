@@ -1,0 +1,26 @@
+uuid: 08a14eed-b155-47f1-8adc-4c4ba7057a03
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.featured_companies
+    - field.field.node.landing_page.body
+    - field.field.node.landing_page.field_content
+    - field.field.node.landing_page.field_paragraph
+    - node.type.landing_page
+  module:
+    - user
+id: node.landing_page.featured_companies
+targetEntityType: node
+bundle: landing_page
+mode: featured_companies
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_content: true
+  field_paragraph: true
