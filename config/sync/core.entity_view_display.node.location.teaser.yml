@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.location.field_image
     - field.field.node.location.field_location
     - field.field.node.location.field_phone_number
+    - field.field.node.location.field_test_field
     - field.field.node.location.field_website
     - node.type.location
   module:
@@ -43,4 +44,5 @@ hidden:
   field_image: true
   field_location: true
   field_phone_number: true
+  field_test_field: true
   field_website: true

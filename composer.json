@@ -34,6 +34,9 @@
         "drupal/elasticsearch_connector": "^7.0@alpha",
         "drupal/faqfield": "^7.0",
         "drupal/field_group": "^3.2",
+        "drupal/geocoder": "^3.29",
+        "drupal/geofield": "^1.44",
+        "drupal/geolocation": "^3.10",
         "drupal/migrate_file": "^2.0",
         "drupal/migrate_plus": "^5.1",
         "drupal/migrate_source_csv": "^3.4",
@@ -48,6 +51,8 @@
         "drupal/stage_file_proxy": "^1.1",
         "drupal/viewsreference": "^2.0@beta",
         "drush/drush": "^10.2",
+        "geocoder-php/arcgis-online-provider": "^4.4",
+        "geocoder-php/google-maps-provider": "^4.7",
         "oomphinc/composer-installers-extender": "^2.0"
     },
     "require-dev": {

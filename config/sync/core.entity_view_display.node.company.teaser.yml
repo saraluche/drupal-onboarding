@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.company.field_address
     - field.field.node.company.field_contact_email
     - field.field.node.company.field_descrition
+    - field.field.node.company.field_geofield
     - field.field.node.company.field_industry
     - field.field.node.company.field_logo
     - field.field.node.company.field_phone_number
@@ -49,6 +50,7 @@ content:
 hidden:
   field_address: true
   field_contact_email: true
+  field_geofield: true
   field_industry: true
   field_logo: true
   field_phone_number: true

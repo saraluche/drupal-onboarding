@@ -1,0 +1,12 @@
+uuid: d6c60d65-7d8d-4f2d-aecd-0c0de3fc8f58
+langcode: en
+status: true
+dependencies: {  }
+id: arcgisonline
+label: ArcGisOnline
+plugin: arcgisonline
+configuration:
+  throttle:
+    period: null
+    limit: null
+  sourceCountry: ''

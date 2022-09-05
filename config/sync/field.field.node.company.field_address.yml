@@ -1,4 +1,4 @@
-uuid: 9f62b1fc-e3ca-4988-a6d1-71495b9b7255
+uuid: 5f28fc90-7bcc-4bf4-8616-f7f50d0a6d11
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ bundle: company
 label: Address
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

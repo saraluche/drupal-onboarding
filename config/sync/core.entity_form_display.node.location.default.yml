@@ -11,11 +11,13 @@ dependencies:
     - field.field.node.location.field_image
     - field.field.node.location.field_location
     - field.field.node.location.field_phone_number
+    - field.field.node.location.field_test_field
     - field.field.node.location.field_website
     - image.style.thumbnail
     - node.type.location
   module:
     - address
+    - geofield
     - image
     - link
     - path
@@ -97,6 +99,13 @@ content:
     region: content
     settings:
       placeholder: ''
+    third_party_settings: {  }
+  field_test_field:
+    type: geofield_latlon
+    weight: 130
+    region: content
+    settings:
+      html5_geolocation: false
     third_party_settings: {  }
   field_website:
     type: link_default

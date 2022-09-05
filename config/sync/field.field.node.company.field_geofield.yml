@@ -1,0 +1,21 @@
+uuid: db94fc94-9922-44a2-94a6-5977f8a359e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geofield
+    - node.type.company
+  module:
+    - geofield
+id: node.company.field_geofield
+field_name: field_geofield
+entity_type: node
+bundle: company
+label: Geofield
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

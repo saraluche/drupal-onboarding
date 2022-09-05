@@ -11,11 +11,13 @@ dependencies:
     - field.field.node.location.field_image
     - field.field.node.location.field_location
     - field.field.node.location.field_phone_number
+    - field.field.node.location.field_test_field
     - field.field.node.location.field_website
     - node.type.location
   module:
-    - address
     - field_group
+    - geocoder_address
+    - geofield
     - image
     - link
     - text
@@ -28,7 +30,7 @@ third_party_settings:
       label: 'Location accordion'
       parent_name: ''
       region: content
-      weight: 10
+      weight: 8
       format_type: accordion
       format_settings:
         classes: accordion_class
@@ -60,21 +62,29 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_address:
-    type: address_default
+    type: geocoder_address
     label: above
-    settings: {  }
+    settings:
+      providers:
+        googlemaps:
+          checked: '1'
+          weight: '0'
+        arcgisonline:
+          checked: '1'
+          weight: '1'
+      dumper: addresstext
     third_party_settings: {  }
-    weight: 5
+    weight: 0
     region: content
   field_contact_email:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 7
+    weight: 6
     region: content
   field_description:
     type: text_default
@@ -89,7 +99,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 9
+    weight: 7
     region: content
   field_image:
     type: image
@@ -117,7 +127,16 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 6
+    weight: 5
+    region: content
+  field_test_field:
+    type: geofield_default
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 23
     region: content
   field_website:
     type: link
@@ -134,6 +153,6 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
 hidden: {  }
