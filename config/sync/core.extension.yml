@@ -16,11 +16,13 @@ module:
   config: 0
   contact: 0
   contextual: 0
+  ctools: 0
   datetime: 0
   dblog: 0
   devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
+  entity: 0
   entity_reference_revisions: 0
   faqfield: 0
   field: 0
@@ -38,6 +40,9 @@ module:
   image: 0
   jquery_ui: 0
   jquery_ui_accordion: 0
+  leaflet: 0
+  leaflet_more_maps: 0
+  leaflet_views: 0
   link: 0
   media: 0
   media_library: 0

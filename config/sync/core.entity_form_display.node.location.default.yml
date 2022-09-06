@@ -17,8 +17,8 @@ dependencies:
     - node.type.location
   module:
     - address
-    - geofield
     - image
+    - leaflet
     - link
     - path
     - text
@@ -101,11 +101,60 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_test_field:
-    type: geofield_latlon
+    type: leaflet_widget_default
     weight: 130
     region: content
     settings:
-      html5_geolocation: false
+      map:
+        leaflet_map: 'Bing road + satellite + hybrid (zoom 1..18)'
+        height: 400
+        locate: 1
+        auto_center: 1
+        map_position:
+          force: false
+          center:
+            lat: !!float 0
+            lon: !!float 0
+          zoom: 12
+          minZoom: 1
+          maxZoom: 18
+          zoomFiner: 0
+        scroll_zoom_enabled: 1
+      input:
+        show: true
+        readonly: false
+      toolbar:
+        position: topright
+        marker: defaultMarker
+        drawPolyline: true
+        drawRectangle: true
+        drawPolygon: true
+        drawCircle: false
+        drawText: false
+        editMode: true
+        dragMode: true
+        cutPolygon: false
+        removalMode: true
+        rotateMode: false
+      reset_map:
+        position: topright
+        control: false
+      fullscreen:
+        control: false
+        options: '{"position":"topleft","pseudoFullscreen":false}'
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2","radius":"6"}'
+      geocoder:
+        control: false
+        settings:
+          position: topright
+          input_size: 25
+          providers: {  }
+          min_terms: 4
+          delay: 800
+          zoom: 16
+          popup: false
+          options: ''
+      geometry_validation: false
     third_party_settings: {  }
   field_website:
     type: link_default
