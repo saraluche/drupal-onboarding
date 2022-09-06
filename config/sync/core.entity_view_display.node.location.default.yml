@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.location.field_contact_email
     - field.field.node.location.field_description
     - field.field.node.location.field_equipment
+    - field.field.node.location.field_fdg
     - field.field.node.location.field_image
     - field.field.node.location.field_location
     - field.field.node.location.field_phone_number
@@ -17,6 +18,7 @@ dependencies:
   module:
     - field_group
     - geocoder_address
+    - geofield
     - image
     - leaflet
     - link
@@ -100,6 +102,15 @@ content:
       link: true
     third_party_settings: {  }
     weight: 8
+    region: content
+  field_fdg:
+    type: geofield_default
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 23
     region: content
   field_image:
     type: image

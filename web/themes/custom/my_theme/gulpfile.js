@@ -29,7 +29,6 @@ function cleanCssTask() {
 
 function jsMin() {
     return src('src/js/*.js')
-     .pipe(minify())
      .pipe(uglify())
      .pipe(dest('./dist/js'));
 }

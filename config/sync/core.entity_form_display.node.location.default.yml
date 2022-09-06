@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.location.field_contact_email
     - field.field.node.location.field_description
     - field.field.node.location.field_equipment
+    - field.field.node.location.field_fdg
     - field.field.node.location.field_image
     - field.field.node.location.field_location
     - field.field.node.location.field_phone_number
@@ -17,6 +18,7 @@ dependencies:
     - node.type.location
   module:
     - address
+    - geofield
     - image
     - leaflet
     - link
@@ -74,6 +76,13 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_fdg:
+    type: geofield_latlon
+    weight: 131
+    region: content
+    settings:
+      html5_geolocation: false
     third_party_settings: {  }
   field_image:
     type: image_image
