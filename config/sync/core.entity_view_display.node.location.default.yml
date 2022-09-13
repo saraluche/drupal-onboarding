@@ -8,11 +8,10 @@ dependencies:
     - field.field.node.location.field_contact_email
     - field.field.node.location.field_description
     - field.field.node.location.field_equipment
-    - field.field.node.location.field_fdg
     - field.field.node.location.field_image
     - field.field.node.location.field_location
+    - field.field.node.location.field_map_location
     - field.field.node.location.field_phone_number
-    - field.field.node.location.field_test_field
     - field.field.node.location.field_website
     - node.type.location
   module:
@@ -20,7 +19,6 @@ dependencies:
     - geocoder_address
     - geofield
     - image
-    - leaflet
     - link
     - text
     - user
@@ -77,7 +75,7 @@ content:
         arcgisonline:
           checked: '1'
           weight: '1'
-      dumper: wkt
+      dumper: addresstext
     third_party_settings: {  }
     weight: 0
     region: content
@@ -103,15 +101,6 @@ content:
     third_party_settings: {  }
     weight: 8
     region: content
-  field_fdg:
-    type: geofield_default
-    label: above
-    settings:
-      output_format: wkt
-      output_escape: true
-    third_party_settings: {  }
-    weight: 23
-    region: content
   field_image:
     type: image
     label: above
@@ -131,6 +120,15 @@ content:
     third_party_settings: {  }
     weight: 22
     region: content
+  field_map_location:
+    type: geofield_default
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_phone_number:
     type: number_integer
     label: above
@@ -139,77 +137,6 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     weight: 6
-    region: content
-  field_test_field:
-    type: leaflet_formatter_default
-    label: above
-    settings:
-      multiple_map: false
-      leaflet_map: 'OSM Mapnik'
-      height: 400
-      height_unit: px
-      hide_empty_map: false
-      disable_wheel: false
-      gesture_handling: false
-      reset_map:
-        control: false
-        position: topright
-      popup: false
-      popup_content: ''
-      map_position:
-        force: false
-        center:
-          lat: !!float 0
-          lon: !!float 0
-        zoom: 12
-        minZoom: 1
-        maxZoom: 18
-        zoomFiner: 0
-      icon:
-        iconType: marker
-        iconUrl: ''
-        shadowUrl: ''
-        className: ''
-        iconSize:
-          x: null
-          'y': null
-        iconAnchor:
-          x: null
-          'y': null
-        shadowSize:
-          x: null
-          'y': null
-        shadowAnchor:
-          x: null
-          'y': null
-        popupAnchor:
-          x: null
-          'y': null
-        html: '<div></div>'
-        html_class: leaflet-map-divicon
-        circle_marker_options: '{"radius": 100, "color": "red", "fillColor": "#f03", "fillOpacity": 0.5}'
-      leaflet_markercluster:
-        control: false
-        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
-        include_path: false
-      fullscreen:
-        control: false
-        options: '{"position":"topleft","pseudoFullscreen":false}'
-      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2","radius":"6"}'
-      geocoder:
-        control: false
-        settings:
-          position: topright
-          input_size: 25
-          providers: {  }
-          min_terms: 4
-          delay: 800
-          zoom: 16
-          popup: false
-          options: ''
-      weight: null
-    third_party_settings: {  }
-    weight: 1
     region: content
   field_website:
     type: link

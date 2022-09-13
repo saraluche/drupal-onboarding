@@ -8,11 +8,10 @@ dependencies:
     - field.field.node.location.field_contact_email
     - field.field.node.location.field_description
     - field.field.node.location.field_equipment
-    - field.field.node.location.field_fdg
     - field.field.node.location.field_image
     - field.field.node.location.field_location
+    - field.field.node.location.field_map_location
     - field.field.node.location.field_phone_number
-    - field.field.node.location.field_test_field
     - field.field.node.location.field_website
     - image.style.thumbnail
     - node.type.location
@@ -20,7 +19,6 @@ dependencies:
     - address
     - geofield
     - image
-    - leaflet
     - link
     - path
     - text
@@ -77,13 +75,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_fdg:
-    type: geofield_latlon
-    weight: 131
-    region: content
-    settings:
-      html5_geolocation: false
-    third_party_settings: {  }
   field_image:
     type: image_image
     weight: 123
@@ -102,68 +93,19 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_map_location:
+    type: geofield_latlon
+    weight: 130
+    region: content
+    settings:
+      html5_geolocation: false
+    third_party_settings: {  }
   field_phone_number:
     type: number
     weight: 126
     region: content
     settings:
       placeholder: ''
-    third_party_settings: {  }
-  field_test_field:
-    type: leaflet_widget_default
-    weight: 130
-    region: content
-    settings:
-      map:
-        leaflet_map: 'Bing road + satellite + hybrid (zoom 1..18)'
-        height: 400
-        locate: 1
-        auto_center: 1
-        map_position:
-          force: false
-          center:
-            lat: !!float 0
-            lon: !!float 0
-          zoom: 12
-          minZoom: 1
-          maxZoom: 18
-          zoomFiner: 0
-        scroll_zoom_enabled: 1
-      input:
-        show: true
-        readonly: false
-      toolbar:
-        position: topright
-        marker: defaultMarker
-        drawPolyline: true
-        drawRectangle: true
-        drawPolygon: true
-        drawCircle: false
-        drawText: false
-        editMode: true
-        dragMode: true
-        cutPolygon: false
-        removalMode: true
-        rotateMode: false
-      reset_map:
-        position: topright
-        control: false
-      fullscreen:
-        control: false
-        options: '{"position":"topleft","pseudoFullscreen":false}'
-      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2","radius":"6"}'
-      geocoder:
-        control: false
-        settings:
-          position: topright
-          input_size: 25
-          providers: {  }
-          min_terms: 4
-          delay: 800
-          zoom: 16
-          popup: false
-          options: ''
-      geometry_validation: false
     third_party_settings: {  }
   field_website:
     type: link_default

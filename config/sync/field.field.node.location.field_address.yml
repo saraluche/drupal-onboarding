@@ -13,7 +13,7 @@ entity_type: node
 bundle: location
 label: Address
 description: ''
-required: true
+required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
@@ -29,7 +29,13 @@ settings:
       override: hidden
     organization:
       override: hidden
+    addressLine1:
+      override: hidden
+    addressLine2:
+      override: hidden
     postalCode:
+      override: hidden
+    locality:
       override: hidden
     administrativeArea:
       override: hidden

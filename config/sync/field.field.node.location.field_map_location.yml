@@ -1,0 +1,40 @@
+uuid: 66a42a0d-642d-4770-b39a-e21dceb98470
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_map_location
+    - node.type.location
+  module:
+    - geocoder_field
+    - geofield
+third_party_settings:
+  geocoder_field:
+    method: geocode
+    weight: 0
+    field: field_address
+    skip_not_empty_value: false
+    disabled: false
+    hidden: false
+    providers:
+      - arcgisonline
+      - geojson_file
+      - googlemaps
+    dumper: wkt
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
+id: node.location.field_map_location
+field_name: field_map_location
+entity_type: node
+bundle: location
+label: 'Map location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

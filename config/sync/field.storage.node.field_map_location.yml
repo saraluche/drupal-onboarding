@@ -1,12 +1,12 @@
-uuid: b00ab1a0-596d-439f-840a-2c6937dee35e
+uuid: eb8283cb-1beb-4191-a2ee-292baa944f66
 langcode: en
 status: true
 dependencies:
   module:
     - geofield
     - node
-id: node.field_test_field
-field_name: field_test_field
+id: node.field_map_location
+field_name: field_map_location
 entity_type: node
 type: geofield
 settings:
