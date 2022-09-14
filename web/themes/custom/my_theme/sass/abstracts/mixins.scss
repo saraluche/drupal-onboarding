@@ -1,0 +1,20 @@
+@mixin button-blue {
+    border: none;
+    color: $button-text;
+    background-color: $clr-brigt-blue;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+   }
+
+ 
+  @mixin button-orange {
+    border: none;
+    color: $button-text;
+    background-color: $clr-orange;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+   }

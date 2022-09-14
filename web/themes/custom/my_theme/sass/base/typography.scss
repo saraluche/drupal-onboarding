@@ -1,0 +1,76 @@
+//Set base font size and then use rem units across the page.
+html {
+    font-size: 16px;
+    
+}
+ 
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+
+ //Set default stylings for headings (h1,h2,...), paragraphs and lists (ul,ol).
+  h1 { 
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Ubuntu;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Ubuntu;
+}
+
+h3 { 
+    font-size: 1.17rem;
+    font-weight: bold;
+}
+
+h4 { 
+    font-size: 1rem;   
+    font-weight: bold;
+}
+
+h5 { 
+    font-size: .83rem;
+    font-weight: bold;
+}
+
+h6 { 
+    font-size: .67rem;
+    font-weight: bold;
+}
+
+ul {
+   margin:0;
+   padding: 0;
+   text-indent: 0;
+   list-style-type: 0;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+li {
+    font-size: 1rem;
+}
+
+
+
+
