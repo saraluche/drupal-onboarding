@@ -1,0 +1,136 @@
+html {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Ubuntu;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: Ubuntu;
+}
+
+h3 {
+  font-size: 1.17rem;
+  font-weight: bold;
+  font-family: Ubuntu;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Ubuntu;
+}
+
+h5 {
+  font-size: 0.83rem;
+  font-weight: bold;
+  font-family: Ubuntu;
+}
+
+h6 {
+  font-size: 0.67rem;
+  font-weight: bold;
+  font-family: Ubuntu, sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: 0;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+li {
+  font-size: 1rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 70%;
+  }
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ubuntu"), url("fonts/Ubuntu-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: bold;
+  font-weight: normal;
+  src: local("Ubuntu"), url("fonts/Ubuntu-Bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: italic;
+  font-weight: bold;
+  src: local("Ubuntu"), url("fonts/Ubuntu-BoldItalic.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: italic;
+  font-weight: normal;
+  src: local("Ubuntu"), url("fonts/Ubuntu-Italic.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: italic;
+  font-weight: lighter;
+  src: local("Ubuntu"), url("fonts/Ubuntu-LightItalic.ttf") format("ttf");
+}
+.button {
+  border: none;
+  color: #ffffff;
+  background-color: #00c3e0;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+html {
+  background-color: red;
+}
+/*# sourceMappingURL=main.css.map */
