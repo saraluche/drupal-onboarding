@@ -11,7 +11,7 @@ const babel = require('gulp-babel');
 var clean = require('gulp-clean');
 
 const jsPath = 'src/js/*.js';
-const cssPath = 'src/scss/*.scss';
+const cssPath = './src/scss/**/*.scss';
 
 
 //prodtask sass to css, minify & add autoprefixer;concat & uglify js

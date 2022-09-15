@@ -6,5 +6,5 @@ base theme: classy
 core_version_requirement: ^8 || ^9
 
 libraries:
-  - my_theme/global.css
-  - my-theme/font-awesome
+  - my_theme/global
+  - my_theme/font-awesome

@@ -4,9 +4,10 @@
 
 @import 'vendors/bootstrap';
 
-@import 'base/reset';
-@import 'base/typography';
 
+@import 'base/typography';
+@import 'base/container';
+@import 'base/font-faces';
 
 
 @import 'components/buttons';
@@ -15,6 +16,10 @@
 @import 'components/dropdown';
 
 @import 'pages/home';
+
 @import 'pages/contact';
 
 @import 'themes/theme';
+ html{
+    background-color: red;
+ }
