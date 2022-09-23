@@ -1,11 +1,58 @@
-header{
-    background-image: url('/img/bg-hero-desktop.svg');
-    background-position: bottom;
-    background-size: cover;
-    background-color: var(--clr-pale-cyan);
-    overflow: hidden;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+body {
+    background-color: $clr-header-gray;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+    .region-primary-menu {
+        background-color: blueviolet;
+    }
+
+    .menu-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+
+    .menu-btn_burger {
+        width: 50px;
+        height: 6px;
+        background: $clr-btn-black;
+        transition: all .5s ease-in-out;
+    }
+    
+    .menu-btn_burger::before,
+    .menu-btn_burger::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: $clr-btn-black;
+        transition: all .5s ease-in-out;
+    }
+
+    .menu-btn_burger::before {
+        transform: translateY(-16px);
+    }
+    .menu-btn_burger::after {
+        transform: translateY(16 px);
+    }
 
 html{
-    background-color: red;
+    background-color: $main-bg-color;
+}
+
+.menu-header {
+    
 }

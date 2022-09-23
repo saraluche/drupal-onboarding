@@ -3,7 +3,15 @@ global:
     theme:
       dist/css/main.css: {}
 
-
+cuddly-slider:
+  version: 1.x
+  css:
+    theme:
+      css/cuddly-slider.css: {}
+  js:
+    js/cuddly-slider.js: {}
+  dependencies:
+    - core/jquery
 
 font-awesome:
   remote: https://github.com/FortAwesome/Font-Awesome
@@ -15,3 +23,4 @@ font-awesome:
   css:
     theme:
       https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css: { type: external, minified: true }
+

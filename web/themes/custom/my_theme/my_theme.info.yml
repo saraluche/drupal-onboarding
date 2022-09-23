@@ -8,3 +8,30 @@ core_version_requirement: ^8 || ^9
 libraries:
   - my_theme/global
   - my_theme/font-awesome
+
+libraries-override:
+  classy/base:
+    css:
+      component:
+        css/components/textarea.css: false
+        css/components/menu.css: false
+        css/components/item-list.css: false
+        css/components/links.css: false
+        css/components/form.css: false
+        css/components/pager.css: false
+
+
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'
+  menu: Main Menu
+  sidebar: Sidebar
+
+# Remove CSS files
+stylesheets-remove:
+  - core/themes/classy/css/components/details.css
+  - core/themes/classy/css/components/file.css
+  - core/themes/classy/css/components/links.css
+  - core/themes/classy/css/components/messages.css
+  - core/themes/stable/css/system/components/ajax-progress.module.css

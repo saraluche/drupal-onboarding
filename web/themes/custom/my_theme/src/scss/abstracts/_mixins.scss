@@ -1,9 +1,9 @@
 //@import 'variables';
 
-@mixin button-blue {
+@mixin button-black {
     border: none;
     color: $button-text;
-    background-color: $clr-brigt-blue;
+    background-color: $clr-btn-black;
     padding: 14px 28px;
     font-size: 16px;
     cursor: pointer;
@@ -11,10 +11,10 @@
    }
 
  
-  @mixin button-orange {
+  @mixin button-gray {
     border: none;
     color: $button-text;
-    background-color: $clr-orange;
+    background-color: $clr-btn-light-gray;
     padding: 14px 28px;
     font-size: 16px;
     cursor: pointer;
